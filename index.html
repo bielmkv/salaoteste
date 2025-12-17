@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleza Sublime</title>
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Flatpickr para calendário interativo -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">
+      <strong>Beleza</strong> <span>Sublime</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#inicio" class="nav-link">Início</a>
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#depoimentos" class="nav-link">Depoimentos</a>
+      <a href="#agendamento" class="nav-link">Agendamento</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <a href="#agendamento" class="btn-primary">Agendar Agora</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <h1>
+      Realce sua <span>Beleza</span><br>
+      Natural
+    </h1>
+
+    <p>
+      Descubra o cuidado que você merece. Nossos especialistas combinam técnicas
+      inovadoras com atenção personalizada para revelar o seu melhor.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#agendamento" class="btn-primary">Agendar Horário</a>
+      <a href="#servicos" class="btn-outline">Ver Serviços</a>
+    </div>
+
+    <div class="hero-metrics">
+      <div><strong>12+</strong><span>Anos de experiência</span></div>
+      <div><strong>50+</strong><span>Profissionais</span></div>
+      <div><strong>4.9 ⭐</strong><span>Avaliação</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="services">
+  <span class="section-badge">Nossos Serviços</span>
+  <h2>Cuidados <span>Especializados</span></h2>
+  <p>Cada serviço é pensado para proporcionar uma experiência única de beleza e bem-estar</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Cabelo</h3>
+      <p>Cortes, coloração e tratamentos capilares personalizados</p>
+      <span>A partir de R$ 80 • 45min - 3h</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Estética Facial</h3>
+      <p>Limpeza de pele, peeling e rejuvenescimento</p>
+      <span>A partir de R$ 120 • 1h - 2h</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Unhas</h3>
+      <p>Manicure, pedicure e nail art exclusivas</p>
+      <span>A partir de R$ 45 • 45min - 1h30</span>
+    </div>
+
+    <div class="service-card">
+      <h3>Spa & Massagens</h3>
+      <p>Relaxamento corporal e tratamentos estéticos</p>
+      <span>A partir de R$ 150 • 1h - 2h</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="testimonials">
+  <span class="section-badge">Depoimentos</span>
+  <h2>O Que Nossas <span>Clientes Dizem</span></h2>
+  <p>A satisfação de nossas clientes é nossa maior recompensa</p>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <strong>Mariana Silva</strong>
+      <span>Cliente há 3 anos</span>
+      <p>"Simplesmente o melhor salão que já frequentei!"</p>
+    </div>
+
+    <div class="testimonial-card">
+      <strong>Carolina Santos</strong>
+      <span>Cliente há 2 anos</span>
+      <p>"O tratamento facial foi transformador. Recomendo!"</p>
+    </div>
+
+    <div class="testimonial-card">
+      <strong>Fernanda Costa</strong>
+      <span>Cliente há 1 ano</span>
+      <p>"Ambiente aconchegante e profissionais incríveis."</p>
+    </div>
+
+    <div class="testimonial-card">
+      <strong>Juliana Oliveira</strong>
+      <span>Cliente há 4 anos</span>
+      <p>"Faço minhas unhas aqui toda semana. Impecável!"</p>
+    </div>
+  </div>
+</section>
+
+<section id="agendamento" class="booking">
+  <h2>Agende seu <span>Horário</span></h2>
+  <p>Reserve seu momento de cuidado em poucos passos</p>
+
+  <div class="steps">
+    <div class="step active" id="step-indicator-1">1</div>
+    <div class="line"></div>
+    <div class="step" id="step-indicator-2">2</div>
+    <div class="line"></div>
+    <div class="step" id="step-indicator-3">3</div>
+  </div>
+
+  <div class="booking-card">
+
+    <!-- STEP 1 -->
+    <div class="step-content active" id="step-1">
+      <h3>Escolha o Serviço</h3>
+
+      <div class="service-options">
+        <button class="service-btn" data-service="Cabelo">Cabelo</button>
+        <button class="service-btn" data-service="Estética Facial">Estética Facial</button>
+        <button class="service-btn" data-service="Unhas">Unhas</button>
+        <button class="service-btn" data-service="Spa & Massagens">Spa & Massagens</button>
+      </div>
+
+      <button class="btn-next">Continuar</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step-content" id="step-2">
+      <h3>Data e Horário</h3>
+
+      <label>Data</label>
+      <input type="text" id="date" placeholder="Selecione a data">
+
+      <label>Horário</label>
+      <div class="time-grid" id="timeGrid"></div>
+
+      <div class="actions">
+        <button class="btn-back">Voltar</button>
+        <button class="btn-next">Continuar</button>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step-content" id="step-3">
+      <h3>Seus Dados</h3>
+
+      <div class="resume">
+        <p><strong>Serviço:</strong> <span id="resumeService"></span></p>
+        <p><strong>Data:</strong> <span id="resumeDate"></span></p>
+        <p><strong>Horário:</strong> <span id="resumeTime"></span></p>
+      </div>
+
+      <label>Nome</label>
+      <input type="text" id="name">
+
+      <label>Telefone</label>
+      <input type="tel" id="phone">
+
+      <label>E-mail</label>
+      <input type="email" id="email">
+
+      <label>Observações</label>
+      <textarea id="notes"></textarea>
+
+      <div class="actions">
+        <button class="btn-back">Voltar</button>
+        <button class="btn-confirm">Confirmar Agendamento</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Beleza Sublime. Todos os direitos reservados.</p>
+</footer>
+
+<script src="agendamento.js"></script>
+</body>
+</html>
